@@ -12,6 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Montserrat:wght@100;200;300;500&display=swap"
     rel="stylesheet">
+  <script src="validate.js"></script>
   <title>Enviar correo electrónico</title>
 </head>
 
@@ -20,40 +21,34 @@
     <h2>Formulario de Correo Electrónico📨</h2>
   </header>
   <form method="post" enctype="multipart/form-data" class="form-container">
-    <div class="emails-container">
-      <section class="form-group">
-        <label for="remitente">Remitente:</label>
-        <input type="email" id="remitente" name="remitente" value="poor-student@isdicoders.com">
-      </section>
-      <section class="form-group">
-        <label for="destinatario">Destinatario:</label>
-        <input type="email" id="destinatario" name="destinatario" required>
-      </section>
-    </div>
-    <div class="body-container">
-      <section class="form-group">
-        <label for="asunto">Asunto:</label>
-        <input type="text" id="asunto" name="asunto" required>
-      </section>
-      <section class="form-group">
-        <label for="cuerpo">Cuerpo:</label>
-        <textarea id="cuerpo" name="cuerpo" rows="4" required placeholder="Escribe tu mensaje aquí."></textarea>
-      </section>
-    </div>
-    <div>
-      <section class="form-group">
-        <label for="adjunto">Archivo Adjunto:</label>
-        <input type="file" id="adjunto" name="adjunto">
-      </section>
-      <section class="form-group">
-        <label for="schedule">Programar Envío:</label>
-        <input type="checkbox" id="schedule" name="programar_envio">
-      </section>
-      <section class="schedule-group">
-        <label for="fecha_hora">Fecha y Hora de Envío:</label>
-        <input type="datetime-local" id="fecha_hora" name="fecha_hora">
-      </section>
-    </div>
+    <section class="form-group">
+      <label for="remitente">Remitente:</label>
+      <input type="email" id="remitente" name="remitente" value="poor-student@isdicoders.com">
+    </section>
+    <section class="form-group">
+      <label for="destinatario">Destinatario:</label>
+      <input type="email" id="destinatario" name="destinatario" required>
+    </section>
+    <section class="form-group">
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto" required>
+    </section>
+    <section class="form-group">
+      <label for="cuerpo">Cuerpo:</label>
+      <textarea id="cuerpo" name="cuerpo" rows="4" required placeholder="Escribe tu mensaje aquí."></textarea>
+    </section>
+    <section class="form-group">
+      <label for="adjunto">Archivo Adjunto:</label>
+      <input type="file" id="adjunto" name="adjunto">
+    </section>
+    <section class="form-group">
+      <label for="schedule">Programar Envío:</label>
+      <input type="checkbox" id="schedule" name="programar_envio">
+    </section>
+    <section class="schedule-group">
+      <label for="fecha_hora">Fecha y Hora de Envío:</label>
+      <input type="datetime-local" id="fecha_hora" name="fecha_hora">
+    </section>
     <section class="button">
       <button type="submit">Enviar Correo</button>
     </section>

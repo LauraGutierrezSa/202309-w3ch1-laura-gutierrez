@@ -31,6 +31,7 @@ header {
   background-color: rgb(130, 137, 103);
   color: whitesmoke;
   padding: 20px 0;
+  text-shadow: 2px 2px 4px rgba(58, 66, 48, 0.818);
 }
 
 .form-container {
@@ -56,6 +57,7 @@ header {
 label {
   display: block;
   font-weight: bold;
+  padding-bottom: 10px;
 }
 
 input[type="text"],
@@ -71,5 +73,14 @@ input[type="file"] {
 
 #schedule:checked + .schedule-group {
   display: flex;
-  flex-direction: row;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  justify-content: space-around;
+}
+
+.button {
+  margin: auto;
+  padding-top: 20px;
+  color: var(--main-color);
+  background-color: rgb(131, 149, 50) 0%;
 }
