@@ -1,6 +1,7 @@
 :root {
   font-family: "Inclusive Sans", sans-serif;
   font-family: "Montserrat", sans-serif;
+  --main-color: #e1e3da;
 }
 
 *,
@@ -11,6 +12,7 @@
 
 body {
   margin: 0;
+  background-color: var(--main-color);
 }
 
 ul {
@@ -22,4 +24,52 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+header {
+  text-align: center;
+  background-color: rgb(130, 137, 103);
+  color: whitesmoke;
+  padding: 20px 0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 25px;
+  border: solid 1px var(--main-color);
+  background: rgb(84, 96, 32);
+  background: linear-gradient(
+    90deg,
+    rgb(131, 149, 50) 0%,
+    rgba(222, 228, 209, 1) 35%,
+    rgba(179, 139, 168, 1) 100%
+  );
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="datetime-local"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#schedule:checked + .schedule-group {
+  display: flex;
+  flex-direction: row;
 }
